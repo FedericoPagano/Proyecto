@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    color: azure;
 }
 ul li{
     color: lightcyan;
@@ -63,6 +64,7 @@ nav li{
 
     grid-template-areas: 
     "header header  header"
+    "carousel carousel carousel"
     "quienes quienes quienes"
     "quienes quienes quienes"
     "servicio servicio infonut"
@@ -71,7 +73,7 @@ nav li{
     "recetas recetas material"
     "footer footer footer";
     
-    grid-template-rows: 40% 25% 20% 20% 20% 20% 20% 20%;
+    grid-template-rows: 40% 25% 25% 20% 20% 20% 20% 20% 20%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 10px;
 
@@ -83,6 +85,10 @@ nav li{
 .header{
         grid-area: header;
         border: black 1px solid;
+}
+.carousel{
+    grid-area: carousel;
+    border: black 1px solid;
 }
 .footer{
         grid-area: footer;
