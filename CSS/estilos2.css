@@ -16,6 +16,7 @@ li a{
     color: lightcyan;
     list-style-type: none;
     text-decoration: none;
+    font-size: 1em;
 }
 a{
     color: lightcyan;
@@ -254,4 +255,27 @@ nav li a:hover{
     69.36% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     83.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@media screen and (max-width:400px) {
+    .diseno{
+
+        grid-template-areas: 
+        "header header"
+        "carousel carousel"
+        "quienes quienes"
+        "servicio servicio"
+        "infonut infonut"
+        "recetas recetas"
+        "material material"
+        "footer footer";
+        
+        grid-template-rows: 45% 25% 25% 20% 20% 20% 20% 20%;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    
+        grid-column-gap: 10px;
+        margin: 0;
+        font-size: 7px;
+    }
 }
